@@ -322,13 +322,25 @@ body {
 }
 /* special-offers */
 .special-offers {
+  position: relative;
   width: 940px;
   padding: 0 10px;
   margin: 0 auto;
+  padding-bottom: 90px;
+}
+.special-offers::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 3000px;
+  height: 1px;
+  background-color: #e5e4e2;
 }
 .special-offers__title {
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
 }
 .special-offers__title::before {
   content: '';
@@ -350,4 +362,187 @@ body {
   line-height: 14px;
   border: 1px solid #e5e4e2;
   background-color: #fff;
+}
+.special-offers__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.special-offers__item {
+  background-color: white;
+  margin-right: 20px;
+  text-align: center;
+  width: 220px;
+  height: 290px;
+  box-sizing: border-box;
+  border: 1px solid #e5e4e2;
+}
+.special-offers__item:hover {
+  background-color: #e5e4e2;
+  border: 1px solid #e5e4e2;
+}
+.special-offers__item a {
+  display: block;
+  text-decoration: none;
+}
+.special-offers__item-img {
+  height: 210px;
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+.special-offers__item-img:hover {
+  background: #000;
+}
+.special-offers__item:last-child {
+  margin-right: 0;
+}
+.special-offers__item-name {
+  margin: 0;
+  margin-top: 20px;
+  color: #3f3d3d;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+.special-offers__item-cost {
+  color: #3f3d3d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+/* communication */
+.communication {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+.communication::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 3000px;
+  height: 1px;
+  background-color: #e5e4e2;
+}
+.communication__social-title {
+  margin-right: 15px;
+  color: #3f3d3d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.communication-icon {
+  font-size: 25px;
+  line-height: 39px;
+  text-decoration: none;
+  color: #3f3d3d;
+}
+.communication-email {
+  border: none;
+  outline: none;
+  background: none;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #e5e4e2;
+  color: #3f3d3d;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 14px;
+  width: 350px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+.communication-btn {
+  border: none;
+  outline: none;
+  background: none;
+  box-sizing: border-box;
+  width: 100px;
+  padding: 13px 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 13px;
+  background-color: #000;
+  text-transform: uppercase;
+}
+/* footer-page */
+.footer-page {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.footer-page__columns {
+  display: flex;
+  margin-bottom: 55px;
+}
+.footer-page__column {
+  min-width: 180px;
+}
+.footer-page__column-title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #3f3d3d;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.footer-page__column-link {
+  display: block;
+  color: #3f3d3d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+.footer-page__column-4 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-page__column-4 a {
+  color: #3f3d3d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-transform: none;
+  line-height: 18px;
+}
+.footer-page__column-info {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.footer-page__bottom-item {
+  color: #3f3d3d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-transform: none;
+  margin-right: 60px;
 }
